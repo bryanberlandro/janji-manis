@@ -6,7 +6,7 @@ type MaxLayoutProps = {
 
 const MaxLayout = ({children}: MaxLayoutProps) => {
     return (
-        <div>
+        <div className="max-w-7xl mx-auto px-[5%] pt-20 pb-4">
             {children}
         </div>
     )
