@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'edu' : 'Edu VIC WA NT Beginner, cursive'
+      },
       colors: {
         'teak': {
             '50': '#faf7f2',
