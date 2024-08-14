@@ -13,6 +13,7 @@ type DataDummyType = {
     id: number;
     name: string;
     price: string;
+    category: string;
     image: string;
 }
 
@@ -65,7 +66,7 @@ const ProductsLayout = ({swiperDelay}: ProductLayoutType) => {
                 {
                     data.map(dt => (
                     <SwiperSlide key={dt.id}>
-                        <Link to={`/coffe/${dt.name}`}>
+                        <Link to={`/${dt.category}/${dt.name}`}>
                             <ProductCard 
                             name={dt.name}
                             price={dt.price}
